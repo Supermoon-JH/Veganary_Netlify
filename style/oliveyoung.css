@@ -1,0 +1,176 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.box {
+  width: 1320px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+nav {
+  position: fixed;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  border-bottom: solid 1px lightgray;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+#nav__title {
+  padding-right: 150px;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+#nav__menu {
+  height: 100px;
+  width: 1150px;
+  margin-left: 100px;
+  margin-right: auto;
+  display: flex;
+}
+#nav__menu ul li {
+  list-style-type: none;
+  background-color: none;
+  float: left;
+  line-height: 35px;
+  vertical-align: middle;
+  text-align: center;
+}
+#nav__menu .menulink {
+  text-decoration: none;
+  color: rgb(15, 55, 56);
+  display: block;
+  width: 150px;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: verdana;
+  text-align: center;
+  margin-right: 60px;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+#nav__menu .menucs {
+  text-decoration: none;
+  color: rgb(15, 55, 56);
+  display: block;
+  width: 150px;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: verdana;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#nav__menu .selected {
+  text-decoration: none;
+  color: rgb(15, 55, 56);
+  border-bottom: 1px solid white;
+  display: block;
+  width: 180px;
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: verdana;
+  outline: 0;
+  text-align: center;
+  margin-right: 100px;
+}
+
+#nav__menu .menulink:hover {
+  color: white;
+  background-color: rgb(15, 55, 56);
+}
+#nav__menu .menucs:hover {
+  color: white;
+  background-color: rgb(15, 55, 56);
+}
+
+#overtxt {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  background-color: rgb(255, 255, 255);
+  width: 625px;
+  height: 270px;
+}
+#nav__menu > ul > li:hover #overtxt {
+  opacity: 1;
+  visibility: visible;
+}
+#nav__menu > ul > li > ul:hover #overtxt {
+  opacity: 1;
+  visibility: visible;
+}
+#overtxt li {
+  margin-top: 1px;
+  width: 200px;
+  text-align: left;
+}
+#overtxt ul > li {
+  text-align: left;
+}
+#overtxt_menu {
+  color: rgb(250, 250, 250);
+}
+/* 상품 목록 */
+section {
+  padding-top: 150px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article h2 {
+  display: flex;
+  justify-content: center;
+}
+
+article > p {
+  align-self: flex-end;
+  margin-right: 100px;
+  margin-bottom: 100px;
+}
+
+#items {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.item {
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  min-width: 250px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item p {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.item img {
+  object-fit: contain;
+  height: 200px;
+}

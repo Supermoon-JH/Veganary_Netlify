@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veganary</title>
+    <link rel="stylesheet" href="style/veganary.css">
+</head>
+<body>
+<!--네비게이션 바-->
+<nav>
+    <p id="nav__title">
+        <a href="index.html">Veganary</a>
+    </p>
+    <div id="nav__menu" style="display:inline">
+        <ul>
+            <li><a class="menulink" href="pages/about.html">About</a></li>
+            <li>
+                <a class="menucs" href="">Category</a>
+                <ul id="overtxt" style="-webkit-padding-start:0px;">
+                    <li><ul>
+                        <li><a class="category_menu" href="편의점.html" style="display:inline">편의점</a></li>
+                        <hr color="gray" size="1"></hr>
+                        <li><a href="">CU</a></li>
+                        <li><a href="">세븐일레븐</a></li>
+                        <li><a href="">GS25</a></li>
+                        <li><a href="">이마트 에브리데이</a></li>
+                        <li><a href="">홈플러스 익스프레스</a></li>
+                    </ul></li>
+                    <li><ul>
+                        <li><a class="category_menu" href="market.html" style="display:inline">마켓</a></li>
+                        <hr color="gray" size="1"></hr>
+                        <li><a href="">이마트</a></li>
+                        <li><a href="">코스트코</a></li>
+                        <li><a href="">홈플러스</a></li>
+                        <li><a href="">롯데마트</a></li>
+                    </ul></li>
+                    <li><ul>
+                        <li><a class="category_menu" href="프랜차이즈.html" style="display:inline">프랜차이즈</a></li>
+                        <hr color="gray" size="1"></hr>
+                        <li><a href="pages/Oliveyoung.html">올리브영</a></li>
+                        <li><a href="">풀무원</a></li>
+                        <li><a href="">롯데리아</a></li>
+                        <li><a href="">맥도날드</a></li>
+                        <li><a href="">버거킹</a></li>
+                    </ul></li>
+                </ul>
+            </li>
+            <li><a class="menulink" href="pages/shop.html">SHOP</a></li>
+        </ul>
+    </div>
+</nav>
+<!-- 첫 번째 페이지  -->
+<div class="box first">
+    <div>
+        <article class="slogan">
+            <h1 class="title">Be vegan, save the world</h1>
+            <h3 class="title">당신의 도전, 
+                <br>Veganary가 함께합니다.
+            </h3>
+        <button type="button" class=button_box>
+            <a href="pages/about.html" class=link_intro>자세히 보기</a>
+        </button>
+        </article>
+        <div>
+            <img src="assets/images/arrow.jpg">
+        </div>
+    </div>
+</div>
+<!-- 두 번째 페이지  -->
+<div class="box second">
+    <div class="wrapper indexPage">
+        <!-- 메인섹션 -->
+        <div class="mainSection">
+            <!-- 검색부분 -->
+            <div class="searchContainer">
+                <!-- get을 이용해 데이터를 실행할 파일에 넘긴다. -->
+                <form onsubmit=[]>
+                    <!-- 검색어 입력부분 -->
+                    <div class="searchBox">
+                        <img src="assets/images/search3.jpg">
+                        <input type="text" name="searchTerm" placeholder="Search...">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--스크립트 파일 로드-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/xlsx.full.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/jszip.js"></script>
+<script src="javascript/wheel.js"></script>
+</body>
+</html>
